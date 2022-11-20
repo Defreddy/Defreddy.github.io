@@ -85,7 +85,7 @@
                                     isLoading: false,
                                     fetchCVE() {
                                       this.isLoading = true;
-                                      fetch(`https://api-service-defreddy.cloud.okteto.net/${this.cveDetail}`)
+                                      fetch(`https://api-service-defreddy.cloud.okteto.net/cveName/${this.cveDetail}`)
                                         .then((res) => res.json())
                                         .then((data) => {
                                           this.isLoading = false;
